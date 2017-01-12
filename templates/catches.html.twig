@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul style="list-style-type: none">
+    {% for catch in catches %}
+        <li>{{ catch.Id }}</li>
+        <li>{{ catch.Navn }}</li>
+        <li>{{ catch.Art }}</li>
+        <li>{{ catch.Vaegt }}</li>
+        <li>{{ catch.Uge }}</li>
+        <br/>
+    {% endfor %}
+</ul>
+</body>
+</html>

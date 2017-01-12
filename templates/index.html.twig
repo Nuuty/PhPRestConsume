@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr><td><a href="../AllCatches.php">Get All Catches</a></td></tr>
+
+    <form action="../CatchById.php" method="post">
+        <tr><td>Id</td><td><input type="text" name="id" /></td></tr>
+        <tr><td></td><td><input type="submit" value="Søg" /></td></tr>
+    </form>
+
+    <form action="../CatchesByName.php" method="post">
+        <tr><td>Name</td><td><input type="text" name="name" /></td></tr>
+        <tr><td></td><td><input type="submit" value="Søg" /></td></tr>
+    </form>
+
+    <form action="../CatchesByWeek.php" method="post">
+        <tr><td>Week</td><td><input type="text" name="week" /></td></tr>
+        <tr><td></td><td><input type="submit" value="Søg" /></td></tr>
+    </form>
+
+    <form action="../NewCatch.php" method="post">
+        <tr><td>Navn</td><td><input type="text" name="name"/></td></tr>
+        <tr><td>Art</td><td><input type="text" name="art"/></td></tr>
+        <tr><td>Vægt</td><td><input type="number" step="1" name="vaegt" value="0.0"/></td></tr>
+        <tr><td>Uge</td><td><input type="text" name="uge"/></td></tr>
+        <tr><td></td><td><input type="submit" value="Opret"/></td></tr>
+    </form>
+</table>
+</body>
+</html>
